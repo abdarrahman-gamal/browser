@@ -25,6 +25,7 @@
    docker run --rm -it -p 6901:6901 -e VNC_PW=password kasmweb/firefox:1.14.0
 
    docker run --rm -it -p 6901:6901 -e VNC_PW=password -e VNC_AUDIO=1 kasmweb/firefox:1.14.0
+   docker run --rm -it -p 6901:6901 -e VNC_PW=password -e VNC_AUDIO=1 --shm-size=512m kasmweb/firefox:1.15.0
    ```
  2. اذهب إلى تبويب **Ports** في الأسفل بجانب الـ Terminal.
  3. ستجد المنفذ **6901**. اضغط على أيقونة الكرة الأرضية (Open in Browser) بجانبه.
