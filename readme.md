@@ -162,7 +162,7 @@ done
 عند انتهائك من الاستخدام، اضغط أولاً على **`Ctrl + C`** لإيقاف سكربت التكرار، ثم نفذ الأمر التالي لإغلاق الحاوية وحذفها فوراً لمنع استهلاك الموارد:
 
 ```bash
-docker stop \$(docker ps -a -q) 2>/dev/null || true
+docker stop $(docker ps -a -q) 2>/dev/null || true
 ```
 
 ---
