@@ -149,9 +149,9 @@ docker run --rm -it -p 3000:3000 -p 3001:3001 --shm-size=2g lscr.io/linuxserver/
 ```bash
 docker run --rm -d -p 8080:3000 --shm-size=2g lscr.io/linuxserver/firefox:latest && \
 while true; do 
-  sleep_time=\$((60 + RANDOM % 541))
-  sleep \$sleep_time
-  echo "Terminal Active - \$(date) - Slept for \(((sleep_time / 60))m\)((sleep_time % 60))s"
+  sleep_time=$((60 + RANDOM % 541))
+  sleep $sleep_time
+  echo "Terminal Active - $(date) - Slept for $((sleep_time / 60))m$((sleep_time % 60))s"
 done
 ```
 
